@@ -4,7 +4,7 @@ import { StatItem } from 'components/Statistics/StatItem';
 export const Statistics = ({ title, stats }) => {
   return (
     <section class={css.statistics}>
-      <h1 className={css.title}>{title}</h1>
+      {title && <h1 className={css.title}>{title}</h1>}
       <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id} label={label} percentage={percentage} />
