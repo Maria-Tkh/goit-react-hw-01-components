@@ -6,15 +6,13 @@ import statisticalData from '../statistical-data.json';
 
 export const AppProfile = () => {
   return (
-    <div>
-      <Profile
-        name={user.name}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-    </div>
+    <Profile
+      name={user.name}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    />
   );
 };
 
