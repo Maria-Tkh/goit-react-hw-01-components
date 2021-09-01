@@ -13,6 +13,7 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
+// console.log(stats);
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,

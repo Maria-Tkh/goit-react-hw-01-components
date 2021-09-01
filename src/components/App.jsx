@@ -4,6 +4,9 @@ import user from '../user.json';
 import { Statistics } from 'components/Statistics/Statistics';
 import statisticalData from '../statistical-data.json';
 
+import { FriendList } from 'components/Friends/FriendList/FriendList';
+import friends from '../friends.json';
+
 export const AppProfile = () => {
   return (
     <Profile
@@ -23,6 +26,10 @@ export const AppStatistics = () => {
       <Statistics stats={statisticalData} />
     </>
   );
+};
+
+export const AppFriends = () => {
+  return <FriendList friends={friends} />;
 };
 
 // //////////////////////////////////

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { AppProfile } from 'components/App';
 import { AppStatistics } from 'components/App';
+import { AppFriends } from 'components/App';
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -10,6 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <AppProfile />
     <AppStatistics />
+    <AppFriends />
   </React.StrictMode>,
   document.getElementById('root'),
 );
