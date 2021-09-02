@@ -7,7 +7,7 @@ export const Statistics = ({ title, stats }) => {
       {title && <h1 className={css.title}>{title}</h1>}
       <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => (
-          <StatItem key={stats.id} label={stats.label} percentage={stats.percentage} />
+          <StatItem key={stats.id} label={stats.label} percentage={percentage} />
         ))}
       </ul>
     </section>

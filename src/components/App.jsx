@@ -10,34 +10,40 @@ import friends from '../friends.json';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import transactions from '../transactions.json';
 
-export const AppProfile = () => {
-  return (
-    <Profile
-      name={user.name}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    />
-  );
-};
-
-export const AppStatistics = () => {
+export const App = () => {
   return (
     <>
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics title="Upload stats" />
       <Statistics stats={statisticalData} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
 
-export const AppFriends = () => {
-  return <FriendList friends={friends} />;
-};
+// export const AppStatistics = () => {
+//   return (
+//     <>
+//       <Statistics title="Upload stats" />
+//       <Statistics stats={statisticalData} />
+//     </>
+//   );
+// };
 
-export const AppTransactions = () => {
-  return <TransactionHistory items={transactions} />;
-};
+// export const AppFriends = () => {
+//   return <FriendList friends={friends} />;
+// };
+
+// export const AppTransactions = () => {
+//   return <TransactionHistory items={transactions} />;
+// };
 
 // //////////////////////////////////
 // import logo from './logo.svg';

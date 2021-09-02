@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { AppProfile } from 'components/App';
-import { AppStatistics } from 'components/App';
-import { AppFriends } from 'components/App';
-import { AppTransactions } from 'components/App';
+import { App } from 'components/App';
+// import { AppStatistics } from 'components/App';
+// import { AppFriends } from 'components/App';
+// import { AppTransactions } from 'components/App';
 
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppProfile />
-    <AppStatistics />
-    <AppFriends />
-    <AppTransactions />
+    <App />
   </React.StrictMode>,
   document.getElementById('root'),
 );
