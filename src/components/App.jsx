@@ -7,6 +7,9 @@ import statisticalData from '../statistical-data.json';
 import { FriendList } from 'components/Friends/FriendList/FriendList';
 import friends from '../friends.json';
 
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
+import transactions from '../transactions.json';
+
 export const AppProfile = () => {
   return (
     <Profile
@@ -30,6 +33,10 @@ export const AppStatistics = () => {
 
 export const AppFriends = () => {
   return <FriendList friends={friends} />;
+};
+
+export const AppTransactions = () => {
+  return <TransactionHistory items={transactions} />;
 };
 
 // //////////////////////////////////

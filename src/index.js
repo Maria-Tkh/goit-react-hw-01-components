@@ -4,6 +4,7 @@ import './index.css';
 import { AppProfile } from 'components/App';
 import { AppStatistics } from 'components/App';
 import { AppFriends } from 'components/App';
+import { AppTransactions } from 'components/App';
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -12,6 +13,7 @@ ReactDOM.render(
     <AppProfile />
     <AppStatistics />
     <AppFriends />
+    <AppTransactions />
   </React.StrictMode>,
   document.getElementById('root'),
 );
