@@ -40,5 +40,3 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
   }),
 };
-
-// import css from 'Profile.module.css';

@@ -12,16 +12,27 @@
   align-items: center;
 }
 
-.status {
+.name {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.online {
   display: block;
   margin-right: 30px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   text-align: center;
+  background-color: green;
 }
 
-.name {
-  font-weight: bold;
-  padding-left: 10px;
+.offline {
+  display: block;
+  margin-right: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: red;
 }
